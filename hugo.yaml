@@ -3,6 +3,7 @@ baseURL: https://cgxeiji.github.io/aron-website/
 languageCode: ja-jp
 defaultLanguage: ja
 title: A・RONスクール
+canonifyURLs: true
 
 module:
   # uncomment line below for local development of module
