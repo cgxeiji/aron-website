@@ -1,4 +1,5 @@
-baseURL: http://aron-school.jp/
+#baseURL: http://aron-school.jp/ # change this when domain is available
+baseURL: https://cgxeiji.github.io/aron-website/
 languageCode: ja-jp
 defaultLanguage: ja
 title: A・RONスクール
