@@ -1,0 +1,207 @@
+baseURL: http://aron-school.jp/
+languageCode: ja-jp
+defaultLanguage: ja
+title: A・RONスクール
+
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
+
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description:
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/aron.png
+    link: /
+    # Default width/height. Uncomment if you need to change
+    # width: 112
+    # height: 28
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: A・RONスクール
+    # Hero subtitle (optional)
+    subtitle: 英論の成功への鍵、A・RONスクールがサポートします！論文作成や英語プレゼンテーションのスキルを向上させましょう。ぜひ当スクールの学習プランをご覧ください！一緒に学び、英論の成功を目指しましょう！
+    # Button text
+    buttontext: 無料体験
+    # Where the main hero button links to
+    buttonlink: "/trial"
+    # Hero image (from static/images/___)
+    image: illustrations/worker.svg
+    # Footer logos (from static/images/logos/clients/*.svg)
+    # urls are optional
+    clientlogos:
+    - logo: systek
+      url: https://google.com
+    - logo: tribe
+      url: https://stefma.github.io/hugo-fresh/
+    - logo: kromo
+      url: https://github.com/StefMa/hugo-fresh
+    - logo: infinite
+      url: https://hugo-fresh.vercel.app/
+    - logo: gutwork
+      url: https://bulma.io/
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: A・RONスクールとは
+    url: /about
+  - title: プラン
+    url: /pricing
+  - title: ナレッジ
+    sublinks:
+    - title: ニュース
+      url: /news
+    - title: ブログ
+      url: /blog
+    - title: イベント
+      url: /blog
+  - title: お問い合わせ
+    url: /#section5
+  - title: 無料体験
+    url: /trial
+    button: true
+#  sidebar:
+#    # Logo (from /images/logos/___.svg)
+#    logo: fresh-square
+#    sections:
+#    - title: User
+#      icon: user
+#      links:
+#      - text: Profile
+#        url: /
+#      - text: Account
+#        url: /
+#      - text: Settings
+#        url: /
+#    - title: Messages
+#      icon: envelope
+#      links:
+#      - text: Inbox
+#        url: /
+#      - text: Compose
+#        url: /
+#    - title: Images
+#      icon: image
+#      links:
+#      - text: Library
+#        url: /
+#      - text: Upload
+#        url: /
+#    - title: Settings
+#      icon: cog
+#      links:
+#      - text: User settings
+#        url: /
+#      - text: App settings
+#        url: /
+  section1:
+    title: 英論
+    subtitle: あなたへのプラン
+    tiles:
+    - title: 英語を学ぶ
+      icon: mouse-globe
+      text: スキルアップを始めましょう！
+      url: /trial
+      buttonText: 無料体験
+    - title: 英語発表
+      icon: laptop-cloud
+      text: This is some explanatory text that is on two rows
+      url: /pricing
+      buttonText: プラン
+    - title: 論文確認
+      icon: plug-cloud
+      text: This is some explanatory text that is on two rows
+      url: /pricing
+      buttonText: プラン
+  section2:
+    title: You're here because you want the best
+    subtitle: And we know it
+    features:
+    - title: Powerful and unified interface
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Cross-device synchronisation
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: doc-sync
+    - title: Nomad system
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      icon: mobile-feed
+  section3:
+    title: A・RONスクール
+    subtitle: 英論の成功へ、未来を目指せ
+    image: illustrations/mockups/app-mockup.png
+    buttonText: 無料体験
+    buttonLink: /trial
+  section4:
+    title: 口コミ
+    subtitle: テキスト
+    clients:
+    - name: Max Hanssen
+      quote: A・RONスクールは私の人生を変わりました。
+      job: 博士課程１年
+      img: 1
+    - name: Eiji Onchi
+      quote: A・RONスクールのおかげで国際学会に参加できました！
+      job: 研究者
+      img: 2
+    - name: Kobayashi Seiya
+      quote: ソラを目指しました。
+      job: 星座
+      img: 3
+  section5:
+    title: お問い合わせ
+    subtitle: We'd love to hear from you
+    buttonText: 送り
+    # action: https://formspree.io/f/<form_id>
+    # method: POST
+  footer:
+    # Logo (from /images/logos/___)
+    logo: aron.png
+    # Social Media Title
+    socialmediatitle: フォローしてね！
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://www.youtube.com/@aronschool7113
+      # Icons are from Font Awesome
+      icon: youtube
+    - link: https://www.youtube.com/@aronschool7113
+      icon: instagram
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "A・RONスクール"
+        links:
+        - text: A・RONスクールとは
+          link: /about
+        - text: プラン
+          link: /pricing
+      column2:
+        title: "ナレッジ"
+        links:
+        - text: ニュース
+          link: /news
+        - text: ブログ
+          link: /blog
+        - text: イベント
+          link: /events
